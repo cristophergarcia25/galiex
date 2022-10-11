@@ -1,0 +1,27 @@
+<br>
+<div class="body">
+  <div class="formulariociudad" [formGroup]="formGroup">
+  
+      <h1>Agregar Ciudad</h1><br><br>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Codigo Postal</mat-label>
+        <input  matInput #postalCode maxlength="5" formControlName="Codigo_postal" placeholder="Ej. 010001">
+        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+      </mat-form-field><br>
+ 
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Nombre de la Ciudad</mat-label>
+        <input type="text" matInput formControlName="Ciudad">
+    </mat-form-field> <br>
+    
+    
+    
+
+    <br>
+  <button mat-raised-button color="primary" class="boton" (click)="guardarCiudad()">Agregar </button><br><br>
+  <button mat-raised-button routerLink="/menuadmin"class="boton" color="accent">Volver</button>
+  </div>
+  
+      
+  </div>

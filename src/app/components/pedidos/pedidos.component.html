@@ -1,0 +1,108 @@
+<br>
+<div class="body">
+  <div class="formulariopedido" [formGroup]="formGroup">
+  
+      <h1>Cotizar Pedido</h1><br><br>
+
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input type="text" matInput formControlName="Destinatario">
+    </mat-form-field> <br>
+    
+
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Zona Origen</mat-label>
+      <mat-select matInput formControlName="ID_origen"  >
+        <mat-option value="1001">Zona 1</mat-option>
+        <mat-option value="1002">Zona 2</mat-option>
+        <mat-option value="1003">Zona 3</mat-option>
+        <mat-option value="1004">Zona 4</mat-option>
+        <mat-option value="1005">Zona 5</mat-option>
+        <mat-option value="1006">Zona 6</mat-option>
+        <mat-option value="1007">Zona 7</mat-option>
+        <mat-option value="1008">Zona 8</mat-option>
+        <mat-option value="1009">Zona 9</mat-option>
+        <mat-option value="1010">Zona 10</mat-option>
+        <mat-option value="1011">Zona 11</mat-option>
+        <mat-option value="1012">Zona 12</mat-option>
+        <mat-option value="1013">Zona 13</mat-option>
+        <mat-option value="1014">Zona 14</mat-option>
+        <mat-option value="1015">Zona 15</mat-option>
+        <mat-option value="1016">Zona 16</mat-option>
+        <mat-option value="1017">Zona 17</mat-option>
+        <mat-option value="1018">Zona 18</mat-option>
+        <mat-option value="1019">Zona 19</mat-option>
+        <mat-option value="1021">Zona 21</mat-option>
+        <mat-option value="1024">Zona 24</mat-option>
+        <mat-option value="1025">Zona 25</mat-option>
+      </mat-select>
+    </mat-form-field>
+ 
+      
+      <mat-form-field appearance="fill">
+        <mat-label>Zona Destino</mat-label>
+        <mat-select matInput formControlName="ID_destino"  >
+        <mat-option value="1001">Zona 1</mat-option>
+        <mat-option value="1002">Zona 2</mat-option>
+        <mat-option value="1003">Zona 3</mat-option>
+        <mat-option value="1004">Zona 4</mat-option>
+        <mat-option value="1005">Zona 5</mat-option>
+        <mat-option value="1006">Zona 6</mat-option>
+        <mat-option value="1007">Zona 7</mat-option>
+        <mat-option value="1008">Zona 8</mat-option>
+        <mat-option value="1009">Zona 9</mat-option>
+        <mat-option value="1010">Zona 10</mat-option>
+        <mat-option value="1011">Zona 11</mat-option>
+        <mat-option value="1012">Zona 12</mat-option>
+        <mat-option value="1013">Zona 13</mat-option>
+        <mat-option value="1014">Zona 14</mat-option>
+        <mat-option value="1015">Zona 15</mat-option>
+        <mat-option value="1016">Zona 16</mat-option>
+        <mat-option value="1017">Zona 17</mat-option>
+        <mat-option value="1018">Zona 18</mat-option>
+        <mat-option value="1019">Zona 19</mat-option>
+        <mat-option value="1021">Zona 21</mat-option>
+        <mat-option value="1024">Zona 24</mat-option>
+        <mat-option value="1025">Zona 25</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Direccion</mat-label>
+        <textarea matInput formControlName="Direccion" placeholder="Direccion exacta de la entrega"></textarea>
+      </mat-form-field>
+        
+          
+      <br>
+      <br>
+      <mat-form-field appearance="outline">
+        <mat-label>Volumen del paquete</mat-label>
+        <mat-select matInput formControlName="ID_volumen"  >
+          <mat-option value="1" >Sobre</mat-option>
+          <mat-option value="2">1-5 libras</mat-option>
+          <mat-option value="3">6-10 libras</mat-option>
+          <mat-option value="4">11-15 libras</mat-option>
+          <mat-option value="5">16-20 libras</mat-option>
+          <mat-option value="6">21-25 libras</mat-option>
+
+
+        </mat-select>
+      </mat-form-field>
+
+
+    
+
+
+  
+    <br>
+  <button mat-raised-button (click)="mostrarCosto()" color="primary" class="boton">Calular  </button>
+  <button mat-raised-button color="primary" class="boton" (click)="guardarPedido()">Agregar </button><br><br>
+
+  <p class="resultado">El precio es de : {{sumaTotal}} Quetzales </p>
+  <button mat-raised-button routerLink="/"class="boton" color="accent">Volver</button>
+  </div>
+  
+      
+  </div>

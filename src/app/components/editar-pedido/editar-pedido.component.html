@@ -1,0 +1,30 @@
+<br>
+<div class="body">
+  <div class="formulariopedido" [formGroup]="formGroup">
+  
+      <h1>Editar</h1><br><br>
+
+
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Estado del pedido</mat-label>
+      <mat-select matInput formControlName="Estado"  >
+        <mat-option value="1">Estado 1 </mat-option>
+        <mat-option value="2">Estado 2</mat-option>
+        <mat-option value="3">Estado 3</mat-option>
+        <mat-option value="4">Estado 4</mat-option>
+        <mat-option value="5">Estado 5</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+    
+  
+
+  
+    <br>
+  <button mat-raised-button color="primary" class="boton" (click)="editarPedido()" >Listo </button><br><br>
+  <button mat-raised-button routerLink="/"class="boton" color="accent">Volver</button>
+  </div>
+  
+      
+  </div>

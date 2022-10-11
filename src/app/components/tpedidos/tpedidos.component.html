@@ -1,0 +1,35 @@
+<br>
+<div class="body">
+  <div class="pedidoForm">
+  
+      <h1>Trackear Pedido</h1><br><br>
+
+
+  
+  <form class="tpedidoForm" [formGroup]="formGroup">
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>ID del pedido</mat-label>
+      <input type="number" matInput formControlName="ID_currier">
+  </mat-form-field> <br>
+  
+    </form>
+    <br>
+  <button mat-raised-button (click)="consultarpedido()" color="primary" class="boton">buscar </button>
+  <button mat-raised-button routerLink="/"class="boton" color="accent">Volver</button>
+  </div>
+  <br>
+  <div class="div" *ngFor="let item of arrPedido">
+    <h1>DATOS DEL PEDIDO:</h1>
+    <h2>Destinatario: {{item.Destinatario}}</h2> 
+    <h2>Id del Cliente: {{item.ID_cliente}}</h2> 
+    <h2>Direccion: {{item.Direccion}}</h2> 
+    <h2>Estado: {{item.Estado}}</h2> 
+    <h2>Volumen: {{item.ID_volumen}}</h2> 
+    <h2>Origen: {{item.ID_origen}}</h2> 
+    <h2>Destino: {{item.ID_destino}}</h2> 
+
+
+  </div>
+      
+  </div>

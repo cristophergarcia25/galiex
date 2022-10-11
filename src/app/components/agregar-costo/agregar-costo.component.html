@@ -1,0 +1,49 @@
+<br>
+<div class="body">
+  <div class="formulariopedido"[formGroup]="formGroup">
+  
+      <h1>Agregar Costo</h1><br><br>
+
+
+  
+
+    <br>
+    
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Codigo postal Origen</mat-label>
+      <input  matInput #postalCode maxlength="5" formControlName="ID_origen" placeholder="Ej. 010001">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field>
+
+
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Codigo postal Destino</mat-label>
+      <input  matInput #postalCode maxlength="5" formControlName="ID_destino" placeholder="Ej. 010001">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field><br>
+
+
+
+
+
+
+
+
+  <br>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Costo</mat-label>
+    <input type="text" matInput formControlName="Costo">
+</mat-form-field> <br>
+
+    
+
+  
+     
+
+    <br>
+    <button mat-raised-button color="primary" class="boton" (click)="guardarCosto()">Agregar </button><br><br>  <button mat-raised-button routerLink="/menuadmin"class="boton" color="accent">Volver</button>
+  </div>
+  
+      
+  </div>

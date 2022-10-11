@@ -1,0 +1,27 @@
+<br>
+<div class="body">
+  <div class="formulariocliente" [formGroup]="formGroup">
+  
+      <h1>Agregar Cliente</h1><br><br>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Nombre del cliente</mat-label>
+        <input type="text" matInput formControlName="Nombre_cliente">
+    </mat-form-field> <br>
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Tipo Cliente</mat-label>
+      <mat-select matInput formControlName="Tienda"  >
+        <mat-option value="0">Paricular</mat-option>
+        <mat-option value="1">Tienda</mat-option>
+      </mat-select>
+    </mat-form-field>
+ 
+    
+    <br>
+  <button mat-raised-button color="primary" class="boton"(click)="guardarCliente()">Agregar </button>
+  <button mat-raised-button routerLink="/menuadmin"class="boton" color="accent">Volver</button>
+  </div>
+  
+      
+  </div>
