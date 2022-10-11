@@ -126,14 +126,14 @@ export class BackendService {
 
   }
 
-  obtenerPedidoId(ID_cliente:number){
-    return this.httpClient.get<PedidosResponse>(BE_API + '/pedidorealizado/' + ID_cliente, httpOptions);
+  obtenerPedidoId(ID_currier:number){
+    return this.httpClient.get<PedidosResponse>(BE_API + '/pedidorealizado/' + ID_currier, httpOptions);
 
   }
 
 
-  editarPedido(ID_cliente:string, editarPedido: EditarPedido){
-    return this.httpClient.put<ClienteResponse>(BE_API+'/editarpedido/'+ ID_cliente, editarPedido);
+  editarPedido(ID_currier:string, editarPedido: EditarPedido){
+    return this.httpClient.put<ClienteResponse>(BE_API+'/pedidorealizado/'+ ID_currier, editarPedido);
 
   }
 
